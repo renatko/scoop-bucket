@@ -1,0 +1,33 @@
+{
+    "version": "0.1.1",
+    "description": "Read-only terminal UI for ClickHouse materialized views",
+    "homepage": "https://github.com/renatko/ch_insp",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/renatko/ch_insp/releases/download/0.1.1/ch_insp_windows_amd64.zip",
+            "hash": "29773c620b554235fddbb3aecff759f67267854dfe79ed6fa3ba890b37b712a1"
+        },
+        "arm64": {
+            "url": "https://github.com/renatko/ch_insp/releases/download/0.1.1/ch_insp_windows_arm64.zip",
+            "hash": "5f6badf43887564a266a91afeee3bd8c845e17910ed6f6f29d43f21367f6514d"
+        }
+    },
+    "bin": "ch_insp.exe",
+    "checkver": {
+        "github": "https://github.com/renatko/ch_insp"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/renatko/ch_insp/releases/download/$version/ch_insp_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/renatko/ch_insp/releases/download/$version/ch_insp_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/renatko/ch_insp/releases/download/$version/SHA256SUMS"
+        }
+    }
+}
